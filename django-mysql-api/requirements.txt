@@ -1,0 +1,1 @@
+Em breve adicionarei todas as dependências necessárias para rodar essa API
