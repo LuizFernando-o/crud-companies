@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'Projeto_API.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST':'localhost',
-        'PORT':'3306',
-        'USER':'root',
-        'PASSWORD':'PASSWORD',
+        'HOST':'db-mysql-nyc1-77934-do-user-14016218-0.b.db.ondigitalocean.com',
+        'PORT':'25060',
+        'USER':'doadmin',
+        'PASSWORD':'AVNS_mTKQLPrPTcK9CMYBWhQ',
         'NAME':'django_api',
         'OPTIONS':{
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"

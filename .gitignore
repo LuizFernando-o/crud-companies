@@ -10,6 +10,10 @@
 
 # production
 /build
+/django-mysql-api/venv
+/django-mysql-api/Projeto_API/api/migrations
+/django-mysql-api/Projeto_API/Projeto_API/__pycache__
+/django-mysql-api/Projeto_API/api/__pycache__
 
 # misc
 .DS_Store
