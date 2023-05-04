@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+yeen#ugpu01fo9%566)wrnp34mmf0d5^$it!#t8+9f4-xzu^$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'api',
 ]
 
@@ -48,7 +49,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'Projeto_API.urls'
 
@@ -77,10 +81,10 @@ WSGI_APPLICATION = 'Projeto_API.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST':'db-mysql-nyc1-77934-do-user-14016218-0.b.db.ondigitalocean.com',
-        'PORT':'25060',
-        'USER':'doadmin',
-        'PASSWORD':'AVNS_mTKQLPrPTcK9CMYBWhQ',
+        'HOST':'localhost',
+        'PORT':'3306',
+        'USER':'root',
+        'PASSWORD':'1234',
         'NAME':'django_api',
         'OPTIONS':{
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
