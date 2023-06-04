@@ -58,19 +58,19 @@ const CompanyForm = () => {
 
   return (
     <div className="col-md-3 mx-auto">
-      <h2 className="mb-3 text-center">Company</h2>
+      <h2 className="mb-3 text-center">Task</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label className="form-label">Name</label>
           <input type="text" name="name" value={company.name} onChange={handleInputChange} className="form-control" minLength="2" maxLength="50" autoFocus required />
         </div>
         <div className="mb-3">
-          <label className="form-label">Foundation</label>
-          <input type="number" name="foundation" value={company.foundation} onChange={handleInputChange} className="form-control" min="1900" max="2020" required />
+          <label className="form-label">Priority (1 to 100)</label>
+          <input type="number" name="foundation" value={company.foundation} onChange={handleInputChange} className="form-control" min="1" max="100" required />
         </div>
         <div className="mb-3">
-          <label className="form-label">Website</label>
-          <input type="url" name="website" value={company.website} onChange={handleInputChange} className="form-control" maxLength="100" required />
+          <label className="form-label">Description</label>
+          <input type="text" name="website" value={company.website} onChange={handleInputChange} className="form-control" maxLength="1000" required />
         </div>
         <div className="d-grid gap-2">
           {params.id ? (

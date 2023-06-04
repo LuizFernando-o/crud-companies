@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          Company Manager
+          Task Manager
         </Link>
         <button
           className="navbar-toggler"
@@ -22,12 +22,12 @@ const Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/">
-                Home
+                My Tasks
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/companyForm">
-                Add Company
+                Add Task
               </Link>
             </li>
           </ul>
